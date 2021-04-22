@@ -1,0 +1,63 @@
+
+// color
+
+$primary: #FC6666;
+$white: #FFFFFF;
+$light-grey: #D8D8D8;
+$dark-grey: #363636;
+// base
+*{
+    font-family: Montserrat, Questrial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    width: 100%;
+    color: $dark-grey;
+}
+
+main {
+    width: 100%;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.pr-1 {
+    padding-right: 10%;
+}
+
+.pl-1 {
+    padding-left: 10%;
+}
+
+.pb-5 {
+    padding-bottom: 24px;
+}
+
+.text-white {
+    color: $white;
+}
+
+.text-small { 
+    font-size: 10px;
+}
+
+.text-medium { 
+    font-size: 14px;
+}
+
+.text-big { 
+    font-size: 27px;
+    font-weight: 300;
+}

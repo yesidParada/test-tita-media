@@ -1,0 +1,55 @@
+.btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 17px 12px 17px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-nav {
+    display: none;
+}
+
+.btn-primary {
+    background: $primary;
+
+    &:disabled {
+        background: lighten($color: $primary, $amount: 15);
+    }
+
+    &:hover {
+        background: darken($color: $primary, $amount: 15);
+    }
+}
+.btn-secundary {
+    background: $white;
+    color: darken($color: $primary, $amount: 15);
+
+    &:disabled {
+        background: lighten($color: $white, $amount: 15);
+    }
+
+    &:hover {
+        background: darken($color: $white, $amount: 15);
+    }
+}
+
+.btn-icon {
+    color: $primary;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .btn-nav {
+        display: flex;
+    }
+}

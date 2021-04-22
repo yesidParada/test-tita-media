@@ -1,0 +1,25 @@
+.grid-container {
+    display: grid;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+.grid-list {
+    grid-template-columns: 100%;
+}
+
+.gallery-grid {
+    grid-template-columns: repeat(auto-fill, 250px);
+}
+
+.grid-item {
+    width: 100%;
+}
+
+.grid-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

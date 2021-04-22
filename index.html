@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">    
+    <title>Sneak - Simple Port</title>
+</head>
+<body>
+    <nav class="content navbar">
+        <div class="navbar__icon pl-1">
+            <i class="fab fa-accusoft"></i>
+            <p>SNEAK</p>
+        </div>
+        <button id="btnNav" class="btn btn-secundary btn-nav" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul id="navbarGroup" class="navbar__group pr-1">
+            <li class="navbar__item navbar__item-select" id="itemAll" onclick="desabledNave('itemAll')">All</li>
+            <li class="navbar__item" id="itemBranding" onclick="desabledNave('itemBranding')">Branding</li>
+            <li class="navbar__item" id="itemWeb" onclick="desabledNave('itemWeb')">Web</li>
+            <li class="navbar__item" id="itemPhoto" onclick="desabledNave('itemPhoto')">Photography</li>
+            <li class="navbar__item" id="itemApp" onclick="desabledNave('itemApp')">App</li>
+            <li class="navbar__item" ><i class="fas fa-search btn-icon"></i></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="baner">
+            <h2 class="text-white text-big">EXPLORE BEYOND HORIZON</h2>
+            <p class="text-white text-medium">Manga mundi referentur quo, no rebum digniss qui.</p>
+            <p class="text-white text-medium pb-5">Per quodsi accusata id, agam labores.</p>
+            <button class="btn btn-secundary"> VIEW OUR WORK</button>
+        </div>
+        <div>
+            <div class="content">
+                <i class="fas fa-th-large btn btn-icon" onclick="changeShort('galeryButton')"></i>
+                <i class="fas fa-equals btn btn-icon" onclick="changeShort('litsbutton')"></i>
+            </div>
+            <div>
+                <ul class="navbar__group">
+                    <li class="navbar__item navbar__item-select">All</li>
+                    <li class="navbar__item">Branding</li>
+                    <li class="navbar__item">Web</li>
+                    <li class="navbar__item">Photography</li>
+                    <li class="navbar__item">App</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div id="grid" class="grid-container gallery-grid"></div>
+        </div>
+        <div class="content"><button class="btn btn-primary">Show me more</button></div>
+    </main>
+    <footer class="content footer text-small">
+        2016 - SNEAK ALL RIGHT RESERVED
+        <div class="social-network">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-basketball-ball"></i>
+            <i class="fab fa-google-plus-g"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
