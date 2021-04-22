@@ -51,11 +51,7 @@ function addClass(id, classNameAdd, classNameRemove) {
 
 function value () {
     fetch('js/images.json', {
-        mode: 'no-cors', // no-cors, *cors, same-origin
-        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: 'omit', // include, *same-origin, omit
-        redirect: 'follow', // manual, *follow, error
-        referrerPolicy: 'no-referrer', 
+        mode: 'no-cors',
     })
         .then((data) => data.json())
         .then((data) => {
