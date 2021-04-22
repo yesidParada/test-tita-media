@@ -43,18 +43,34 @@
 
 .navbar__group-activate {
     display: block !important;
+    animation-name: movementRight;
+    animation-duration: 4s;
 }
-
+@keyframes movementRight {
+    0%   {width: 0%;  right:0px;}
+    25%  {width: 100%; right:200px}
+  }
 @media (max-width: 600px) {
+    .navbar {
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        background: $white;
+    }
     .navbar__group {
         display: none;
         position: fixed;
-        top: 70px;
+        top: 66px;
         left: 0;
         background: $white;
         width: 100%;
-        height: calc(100vh - 100px);
+        height: 100vh;
     }
+
+    
     .navbar__item {
         display: flex;
         justify-content: center;
